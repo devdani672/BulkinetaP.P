@@ -11,7 +11,7 @@ body {
 	text-decoration: none;
 }
 
-nav {
+#main-nav {
 	display: flex;
 	width: fit-content;
 	background-color: #fff931;
@@ -20,24 +20,24 @@ nav {
 	align-items: center;
 }
 
-img {
+#logo {
 	height: 120px;
 }
 
-div {
+.nav__text-container {
 	padding: 40px;
 }
 
-#div1 {
+#logo__container {
 	padding: 0;
 }
 
-a {
+.nav__item {
 	transition: .3s;
 }
 
 
-a:hover {
+.nav__item:hover {
 	text-decoration: underline 3px;
 	opacity: .8;
 }
@@ -50,17 +50,18 @@ h2, i, #kw{
 	text-shadow: 2px 3px 0px #898999 ;
 }
 
-#kw {
+#kw1 {
 	color: #fff931;
 	transition: .3s;
+	font-size: 2rem;
 }
 
-#kw:hover {
+#kw1:hover {
 	box-shadow: 0 5px 0 #fff931,
 				0 8px 0 #898999;
 }
 
-article {
+#cc {
 	width: 100%;
 	height: fit-content;
 	display: grid;
@@ -68,17 +69,17 @@ article {
 	grid-gap: 50px;
 }
 
-section {
+.cc__pregunta {
 	border-radius: 25px;
 	border: 3px solid #fff931;
-	height: 200px;
+	height: fit-content;
 }
 
-#uno {
+.cc__pregunta:nth-child(odd) {
 	margin-left: 50px;
 }
 
-#dos {
+.cc__pregunta:nth-child(even) {
 	margin-right: 50px;
 }
 
@@ -125,8 +126,20 @@ input[type="radio"] + label {
  
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
     color: #fff931;
    	outline: 3px solid #fff931;
     
+}
+
+#repuestas__container {
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: 30px;
+	padding: 0 60px 0 60px;
+	margin: 30px 0 30px 0;
+}
+
+.ico1 {
+	font-size: 3rem;
 }

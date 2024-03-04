@@ -3,46 +3,56 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="prueba.css">
+	<link rel="stylesheet" type="text/css" href="bulkineta2.0.css">
 	<script src="https://kit.fontawesome.com/e22f94a194.js" crossorigin="anonymous"></script>
 	<title></title>
 </head>
 <body>
 
-<nav>
-	<div id="div1"> <img src="king(1).png"></div>
-	<a id="div2" href="#"><div><span>Calculadora de Kcals</span></div></a>
-	<a href="#1"><div><span>TierList de alimentos</span></div></a>
-	<a href="#2"><div><span>Recetas</span></div></a>
-	<a href="#3"><div><span>Consejos</span></div></a>
-</nav>
+<header>
+	<nav id="main-nav">
+		<div id="logo__container"><img id="logo" src="Multimedia/bulkinetapng.png"></div>
+		<a class="nav__item"href="#"><div class="nav__text-container"><span>Calculadora de Kcals</span></div></a>
+		<a class="nav__item" href="#1"><div class="nav__text-container"><span>TierList de alimentos</span></div></a>
+		<a class="nav__item" href="#2"><div class="nav__text-container"><span>Recetas</span></div></a>
+		<a class="nav__item" href="#3"><div class="nav__text-container"><span>Consejos</span></div></a>
+	</nav>
+</header>
 
-<h2><i>Calculadora de <span id="kw">Kcals</span></i></h2>
-<article>
+<h2><i>Calculadora de <span id="kw1">Kcals</span></i></h2>
 
-	<section id="uno">
+<article id="cc">
+
+	<section class="cc__pregunta">
 		<div id="ico-container"><span id="ico">1</span></div>
 		<h4>¿Cuál es tu sexo?</h4>
-			<div>
+			<div id="repuestas__container">
+
+				<i class="fa-solid fa-person ico1"></i>
+				<i class="fa-solid fa-person-dress ico1"></i>
+
 				<input id="sexo_hombre" type="radio" name="sexo">
-					<label for="sexo_hombre">Hombre</label>
+					<label id="hombre" for="sexo_hombre">Hombre</label>
 				<input id="sexo_mujer" type="radio" name="sexo">
-					<label for="sexo_mujer">Mujer</label>
+					<label id="mujer" for="sexo_mujer">Mujer</label>
 			</div>
 	</section>
 
-	<section id="dos">
+	<section class="cc__pregunta">
 			<div id="ico-container"><span id="ico">2</span></div>
 			<h4>¿Cuánto pesas?</h4>
 	</section>
-	<section id="uno">
+
+	<section class="cc__pregunta">
 		<div id="ico-container"><span id="ico">3</span></div>	
 		<h4>¿Cuánto mides?</h4>
 	</section>
-	<section id="dos">
+
+	<section class="cc__pregunta">
 		<div id="ico-container"><span id="ico">4</span></div>
 		<h4>¿Qué edad tienes?</h4>
 	</section>
+
 </article>
 
 </body>
