@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bulkinetastyle.css">
+	<script src="bulkineta.js"></script>
+	<title>BULKINETA</title>
+</head>
+
+<body>
+	<nav id="main__header-nav">
+		<div class="nav__index"><a class="li-text" href="#">Calculadora de Calorías</a></div>
+		<div class="nav__index"><a class="li-text" href="#">Teoria del BULK</a></div>
+		<div class="nav__index"><a class="li-text" href="#">Recetas</a></div>
+		<div class="nav__index"><a class="li-text" href="#">Tierlist alimentos</a></div>
+	</nav>
+
+	<header id="main__header">
+		<div id="banner__container">
+			<img id="banner" src="banner.png">
+		</div>
+	</header>
+
+	<main id="main">
+
+		<article id="cc">
+			<h2 id="cc__title"><i>Calculadora de Calorías</i></h2>
+
+			<p id="cc__text" >Una calculadora de calorías es una herramienta fundamental a la hora de plantear un <span class="key-word-1">superávit calórico</span>, basada en la fórmula de <span class="key-word-1">Harris-Benedict</span>, la más aceptada y utiilizada en la actualidad.</p>
+
+			<section id="cc__container">
+				<form id="cc__form">
+					<label class="cc__form-text">Peso en <span class="key-word-2">kg</span></label>
+					<label class="cc__form-text">Altura en <span class="key-word-2">cm</span></label>
+
+						<input class="cc__form-input peso" type="text" name="" placeholder="Introuce tu peso en kg">
+						<input class="cc__form-input altura" type="text" name="" placeholder="Introduce tu altura en cm">
+
+					<label class="cc__form-text">Sexo</label>
+					<label class="cc__form-text">Edad</label>
+
+						<div id="sexo__container">
+							<input type="radio" name="sexo" id="sexo__hombre">
+							<label for="sexo__hombre">Hombre</label>
+							<input type="radio" name="sexo" id="sexo__mujer">
+							<label for="sexo__mujer">Mujer</label>
+						</div>
+						<input class="cc__form-input edad" type="text" name="" placeholder="Introduce tu edad">
+
+					<div id="actividad__container">
+						
+						<select id="actividad">
+							<option value="" disabled="" selected="Selecciona un nivel">Selecciona un nivel de actividad física</option>
+							<option value="1.2">Sedentario</option>
+							<option value="1.375">Actividad ligera: Ejercicio ligero 1-3 veces por semana</option>
+							<option value="1.55">Actividad moderada: Ejercicio moderado 3-5 veces por semana</option>
+							<option value="1.725">Actividad intensa: Ejercicio intenso 6-7 veces por semana </option>
+							<option value="1.9">Actividad muy intenso: ejercicio muy intenso a diario </option>
+						</select>
+					</div>
+
+					<button id="form__submit" onclick="mostrarResultados()">Enviar resultados</button>
+				</form>
+
+				<p id="resultado__text">papap</p>
+			</section>
+		</article>
+
+
+		<article id="teoria">
+			<h2 id="teoria__title">Teoría del BULK</h2>
+
+		
+
+			<section id="teoria__text">
+				<p id="text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+				</p>
+			</section>
+
+	<aside id="receta">
+			<a id="receta__link" href="">
+				<div id="receta__container">
+					<h3>Descubre el post-entreno ideal</h3>
+					<img id="receta__img" src="receta.png">
+					<p id="receta__text">Queque de chocolate con más de 30 gramos de proteína en 3 pasos</p>
+				</div>
+			</a>
+			</aside>
+
+		</article>
+	</main>
+
+</body>
+</html>

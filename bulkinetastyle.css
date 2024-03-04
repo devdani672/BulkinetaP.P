@@ -1,0 +1,285 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #FDF0D5;
+}
+
+* {
+	font-family: "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+}
+
+/* NAV */
+
+#main__header {
+	background: #003049;
+	width: 100%;
+	height: 300px;
+}
+
+#main__header-nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #003049;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+
+}
+
+.nav__index {
+	margin: 20px 40px 20px 40px;
+	transition: margin .3s,
+				opacity .3s,
+				box-shadow .3s;
+}
+
+.nav__index:hover {
+	margin: 20px 50px 20px 50px;
+	transition: margin .5s,
+				opacity .2s,
+				box-shadow .2s;
+	opacity: .8;
+	box-shadow: 0 3px 0 #FDF0D5;
+}
+
+
+.li-text {
+	color: #FDF0D5;
+	font-size: 1.15rem;
+	text-decoration: none;
+}
+
+/* Banner */
+
+#banner__container {
+	width: 100%;
+}
+
+#banner {
+	width: 100%;
+}
+
+/* Formulario calculadora */
+
+#main {
+	width: 100%;
+}
+
+#cc {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+}
+
+h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	color: #003049;
+	font-weight: bold;
+}
+
+#cc__text {
+	width: 50%;
+	opacity: .8;
+	text-align: center;
+	color: #003049;
+}
+
+#cc__container {
+	border: 5px solid #003049;
+	border-radius: 10px;
+	width: 60%;
+}
+
+#cc__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.cc__form-text {
+	margin: 50px 50px 10px 50px;
+	font-size: 1.25rem;
+}
+
+.cc__form-text:nth-child(even) {
+	margin: 50px 50px 10px 25px;
+}
+
+.cc__form-input {
+	margin: 10px 25px 0 50px;
+	padding: 8px;
+	border-radius: 3px;
+	border: 3px solid #003049;
+	outline: 2px solid #FDF0D5;
+	font-size: 1.25rem;
+}
+
+.cc__form-input:nth-child(even) {
+	margin: 10px 50px 0 25px;
+}
+
+.cc__form-input:focus {
+		box-shadow: 0 0 0 2px  rgba(102, 155, 188, .7),
+					0 0 0 4px rgba(102, 155, 188, .7);	
+}
+
+.cc__form-input::placeholder {
+	font-style: italic;
+	opacity: .3;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#sexo__container {
+	margin: 10px 25px 0 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+	padding: 8px;
+	background: #fff;
+	border-radius: 3px;
+	border: 3px solid #003049;
+	outline: 2px solid #FDF0D5;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background: rgba(102, 155, 188, .7);
+    box-shadow: 0 0 0 2px  rgba(102, 155, 188, .7),
+				0 0 0 4px rgba(102, 155, 188, .7);	
+    
+}
+
+#actividad__container {
+	grid-column: 1 / 3;
+	justify-self: center;
+	width: 100%;
+}
+
+#actividad {
+	margin: 50px;
+	font-size: 1rem;
+	padding: 8px;
+	width: 87.5%;
+	background: #fff;
+	border-radius: 3px;
+	border: 3px solid #003049;
+	outline: 2px solid #FDF0D5;
+}
+
+#form__submit {
+	background: rgba(102, 155, 188, .7);
+	border-radius: 3px;
+	border: 3px solid #003049;
+	outline: 2px solid #FDF0D5;
+	grid-column: 1 / 3;
+	justify-self: center;
+	padding: 8px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+#form__submit:hover {
+	box-shadow: 0 0 0 2px  rgba(102, 155, 188, .7),
+					0 0 0 4px rgba(102, 155, 188, .7);	
+}
+
+
+
+
+
+
+
+
+
+
+.key-word-1 {
+	text-decoration: underline;
+	font-style: italic;
+
+}
+
+.key-word-2 {
+	background: rgba(102, 155, 188, .7);
+	border-radius: 3px;
+	padding: 0 2px 0 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Articulo */
+
+#teoria {
+	margin: 100px 200px 0 200px;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-gap: 50px;
+}
+
+#teoria__title {
+	padding-bottom: 20px;
+	box-shadow: 0px 3px 0 #003049;
+	text-align: start;
+	margin-bottom: -40px;
+}
+
+#teoria__text {
+	grid-column: 1 / 2;
+}
+
+#text{
+	opacity: .8;
+	color: #003049;
+}
+
+#receta {
+	margin-top: 100px;
+}
+
+#receta__container {
+	background: rgba(102, 155, 188, .7);
+	padding: 0 8px 0 8px;
+	border: 3px solid #003049;
+	border-radius: 3px;
+}
+
+#receta__img {
+	width: 100%;
+	border-bottom: 3px solid #003049;
+}
+
+#receta__text {
+	opacity: .8;
+	color: #003049;
+	font-size: .8rem;
+	margin-top: 8px;
+}
+
+#receta__link {
+	text-decoration: none;
+}
