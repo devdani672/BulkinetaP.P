@@ -11,6 +11,10 @@ body {
 	text-decoration: none;
 }
 
+
+	/* NAV */
+
+
 #main-nav {
 	display: flex;
 	width: fit-content;
@@ -42,6 +46,10 @@ body {
 	opacity: .8;
 }
 
+
+	/* CAlCULADORA */
+
+
 h2, i, #kw{
 	font-size: 2rem;
 	color: #fff;
@@ -60,6 +68,10 @@ h2, i, #kw{
 	box-shadow: 0 5px 0 #fff931,
 				0 8px 0 #898999;
 }
+
+
+	/* FORMULARIO */
+
 
 #cc {
 	width: 100%;
@@ -103,6 +115,10 @@ h2, i, #kw{
 	color: #222;
 }
 
+
+	/* FORMULARIO */
+
+
 h4 {
 	color:#fff931;
 	width: 	100%;
@@ -111,6 +127,10 @@ h4 {
 	margin: 0;
 }
  
+
+	/* PREGUNTA 1 */
+
+
 input[type="radio"] {
 	display: none;
 }
@@ -123,6 +143,7 @@ input[type="radio"] + label {
 	border-radius: 3px;
 	outline: 3px solid #fff;
     cursor: pointer;
+    text-align: center;
  
 }
 
@@ -137,9 +158,45 @@ input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
 	grid-template-columns:1fr 1fr;
 	grid-gap: 30px;
 	padding: 0 60px 0 60px;
+	margin: 30px 0 60px ;
+}
+
+.ico1, .ico3 {
+	font-size: 4rem;
+}
+
+
+	/* PREGUNTA 2,3 Y 4 */
+
+
+.ico3 {
 	margin: 30px 0 30px 0;
 }
 
-.ico1 {
-	font-size: 3rem;
+.cc__pregunta {
+	text-align: center;
 }
+
+#peso-input, #altura-input, #edad-input {
+	width: 10%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0);
+	outline: none;
+	border: none;
+	border-bottom: 3px solid #fff931;
+	color: #fff;
+	margin-bottom: 60px;
+	padding: 7px;
+}
+
+#respuestas-text {
+	color: #fff;
+}
+
+#ico4-container {
+	display: flex;
+	margin: 0 250px 0 250px;
+}
+
+	
+	/*PREGUNTA 5 */
