@@ -23,7 +23,7 @@
 <!-- FORMULARIO CALCULADORA -->
 
 
-<h2><i>Calculadora de <span id="kw1">Kcals</span></i></h2>
+<h2>Calculadora de <span id="kw1">Kcals</span></h2>
 
 <article id="cc">
 
@@ -89,6 +89,41 @@
 		<input id="edad-input" type="text" placeholder="00">
 		<span id="respuestas-text">años</span>
 	</section>
+
+
+	<!-- QUINTA PREGUNTA -->
+
+
+	<section class="cc__pregunta">
+		<div id="ico-container"><span id="ico">5</span></div>
+		<h4>Selecciona tu nivel de actividad física diaria</h4>
+
+		<i class="fa-solid fa-person-running ico3"></i>
+		<select id="actividad">
+			<option value="" disabled="" selected="">Selecciona un nivel de actividad física diaria</option>
+					<option class="actividad-opciones" value="1.2">Sedentario</option>
+					<option class="actividad-opciones" value="1.375">Actividad ligera: Ejercicio ligero 1-3 veces por semana</option>
+					<option class="actividad-opciones" value="1.55">Actividad moderada: Ejercicio moderado 3-5 veces por semana</option>
+					<option class="actividad-opciones" value="1.725">Actividad intensa: Ejercicio intenso 6-7 veces por semana </option>
+					<option class="actividad-opciones" value="1.9">Actividad muy intensa: Ejercicio muy intenso a diario </option>
+			</select>
+	</section>
+
+
+	<!-- BOTON SUBMIT -->
+
+
+	<section class="cc__pregunta">
+		<button id="form__submit" onclick="mostrarResultados()">Enviar resultados y calcular resultado</button>
+	</section>
+
+
+	<!-- RESULTADDO -->
+
+	<section class="cc__pregunta">
+		
+	</section>
+
 
 </article>
 
