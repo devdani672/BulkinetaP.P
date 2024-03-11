@@ -2,6 +2,7 @@ body {
 	background-image: linear-gradient(to top, #000000, #161616, #242424, #343434, #444444);
 	margin: 0;	
 	padding: 0;
+
 }
 
 * {
@@ -9,6 +10,7 @@ body {
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 	color: #222;
 	text-decoration: none;
+		scroll-behavior: smooth;
 }
 
 
@@ -91,7 +93,8 @@ h2, #kw {
 	border-radius: 25px;
 	border: 3px solid #fff931;
 	height: fit-content;
-		text-align: center;
+	text-align: center;
+	box-shadow: 3px 3px 5px #000;
 }
 
 .cc__pregunta:nth-child(odd) {
@@ -144,20 +147,28 @@ input[type="radio"] {
 
 input[type="radio"] + label {
     display: inline-block;
-    color: #222;
+    color: #898999;
 	padding: 8px;
 	background: #F5F5F5;
 	border-radius: 3px;
     cursor: pointer;
     text-align: center;
-    border-bottom: 3px solid #fff931;
+    border-bottom: 4px solid #898999;
+    box-shadow: 3px 3px 5px #000;
  
 }
 
-input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
+input[type="radio"]:checked + label{
    	background: #fff931;
-    
+   	color: #222;
+   	border: none;
 }
+
+ #hombre:hover, #mujer:hover {
+ 	background: #fff931;
+   	color: #222;
+    border-bottom: 4px solid #fff931;
+ }
 
 #repuestas__container {
 	display: grid;
@@ -189,6 +200,7 @@ input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
 	color: #F5F5F5;
 	margin-bottom: 60px;
 	padding: 7px;
+
 }
 
 #respuestas-text {
@@ -216,6 +228,7 @@ input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
 	border: none;
 	border-bottom: 3px solid #fff931;
 	color: #F5F5F5;
+	cursor: pointer;
 	margin-bottom: 60px;
 	padding: 7px;
 }
@@ -230,23 +243,75 @@ input[type="radio"]:checked + label, #hombre:hover, #mujer:hover{
 
 .cc__pregunta:nth-child(6) {
 	margin: 0 0 0 50px;
+	border: none;
+
 }
 
- .cc__pregunta:last-child {
- 	margin: 0 50px 1000px 0;
- }
+ 
 
  #form__submit {
- 	padding: 8px;
- 	background: #fff931;
- 	width: 100%;
- 	height: 100%;
  	outline: none;
  	border: 3px solid #fff931;
- 	border-radius: 20px;
+ 	background: #fff931;
  	cursor: pointer;
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 8px;
+ 	border-radius: 20px;
+
  	
  	&:hover {
- 		opacity: .8;
+ 		opacity: .85;
  	}
  }
+
+
+	/* RESULTADO */
+
+
+.cc__pregunta:last-child {
+ 	margin: 0 50px 100px 0;
+ 	background: #fff931;
+ 	padding: 8px;
+ }
+
+ #resultado-text {
+ 	background: #fff931 ;
+ 	border-radius: 20px;
+ 	width: 100%;
+ }
+
+
+ /* TIERLIST ALIMENTOS */ 
+
+
+#ta-title {
+	margin-bottom: 0;
+	box-shadow: 3px -4px 5px #000;
+	padding-top: 15px;
+}
+
+#ta-subtitle {
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+	color: #fff931;
+	text-shadow: 2px 3px 0px #898999;
+}
+
+
+	/* ESTILO APARTADOS */
+
+
+.ta-apartado {
+	margin: 100px;
+}
+
+.apartado-title {
+	text-align: left;
+}
+
+.ta-text {
+	color: rgba(245, 245, 245, .85);
+	margin-left: 20px;
+}
