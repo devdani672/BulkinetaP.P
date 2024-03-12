@@ -315,3 +315,86 @@ input[type="radio"]:checked + label{
 	color: rgba(245, 245, 245, .85);
 	margin-left: 20px;
 }
+
+
+	/* TIERLIST */
+
+
+.TierList {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	margin: 50px 0 0 20px;
+	width: 70%;
+	text-align: center;
+
+}
+
+.celda {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content	: center;
+}
+
+#false-img {
+	opacity: 0;
+	width: 	70px;
+	margin: 15px;
+}
+
+.s {background: #fd8082;}
+
+.a {background: #febf84;}
+
+.b {background: #fede86;}
+
+.c {background: #fffe87;}
+
+.d {background: #c1fd86;}
+
+.celda-content {
+	background: #252525;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+
+.content {
+	width: 70px;
+	margin: 15px;
+}
+
+
+		/*TAGS TIERLIST*/
+
+
+.tag  {
+	position: absolute;
+	text-align: center;
+	background: transparent;
+	margin-top: -30px;
+	padding: 0 40px 85px 40px;
+	opacity: 0;
+	transition: .1s;
+
+	&:hover {
+		opacity: 1;
+	}
+
+}
+
+.tag-text-container {
+	padding: 6px;
+	border-radius: 6px ;
+	display: flex;
+	align-items: center;
+}
+
+.tag-text {
+	font-size: 	0.9rem;
+}
+
+.ico4 {
+	width: 22px;
+}
