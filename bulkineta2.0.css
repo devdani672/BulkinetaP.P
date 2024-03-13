@@ -125,10 +125,6 @@ h2, #kw {
 	color: #222;
 }
 
-
-	/* FORMULARIO */
-
-
 h4 {
 	color:#fff931;
 	width: 	100%;
@@ -288,7 +284,7 @@ input[type="radio"]:checked + label{
 #ta-title {
 	margin-bottom: 0;
 	box-shadow: 3px -4px 5px #000;
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 #ta-subtitle {
@@ -337,12 +333,6 @@ input[type="radio"]:checked + label{
 	justify-content	: center;
 }
 
-#false-img {
-	opacity: 0;
-	width: 	70px;
-	margin: 15px;
-}
-
 .s {background: #fd8082;}
 
 .a {background: #febf84;}
@@ -384,15 +374,12 @@ input[type="radio"]:checked + label{
 
 }
 
-.tag-text-container {
-	padding: 6px;
+.tag-text {
+	font-size: 	0.9rem;
+		padding: 6px;
 	border-radius: 6px ;
 	display: flex;
 	align-items: center;
-}
-
-.tag-text {
-	font-size: 	0.9rem;
 }
 
 .ico4 {
