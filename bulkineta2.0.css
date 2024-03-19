@@ -10,8 +10,8 @@ body {
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 	color: #222;
 	text-decoration: none;
-		scroll-behavior: smooth;
-}
+	scroll-behavior: smooth;
+	box-sizing: border-box;
 
 
 	/* NAV */
@@ -287,7 +287,7 @@ input[type="radio"]:checked + label{
 	padding-top: 20px;
 }
 
-#ta-subtitle {
+.subtitle {
 	text-align: center;
 	width: 100%;
 	margin-top: 0;
@@ -384,4 +384,110 @@ input[type="radio"]:checked + label{
 
 .ico4 {
 	width: 22px;
+}
+
+
+	/*RECETAS*/
+
+#r-title {
+	box-shadow: 3px -4px 5px #000;
+  	padding-top: 20px;
+  	margin: 150px 0 0 0;
+}
+
+
+	/* ESTILO 1 */
+
+
+
+.r-section {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 2fr;
+	background: #fff931;
+	border-radius: 25px;
+	box-shadow: 3px 3px 5px #000;
+	margin: 100px 50px 50px 50px;
+}
+
+.s-title  {
+	color: #222;
+	font-size: 1.5rem;
+	grid-column: 1 / 4;
+	margin: 25px;
+}
+
+.s-subtitle{
+	color: #222;
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+	height: fit-content;
+}
+
+.s-li, .s-text {
+	font-size: .9rem;
+	margin: 0;
+	color: rgba(22, 22, 22, .7);
+}
+
+.kw2 {
+	font-size: .9rem;
+	color: rgba(22, 22, 22, .8);
+	text-decoration: 1.5px underline;
+}
+
+.s-text {
+	margin-left: 40px;
+}
+
+.s-ul {
+	margin-top: 0;
+}
+
+.s-container {
+	width: auto;
+}
+
+
+.s-container {
+	border-top: 3px solid #222;
+	padding: 0 25px 25px 25px;
+	display: grid;
+	grid-template-rows: 40% 40%;
+	justify-content: center;
+
+}
+
+.s-container:nth-child(2), .s-container:nth-child(3){
+	border-right: 3px solid #222;
+}
+
+	/* ESTILO 2 */
+
+
+.rs-2 {
+	background: transparent;
+	border: 3px solid #fff931;
+}
+
+.st-2{
+	color: #fff931;;
+}
+
+.kw2-1 {
+	color: rgba(245, 245, 245, .9);
+	text-decoration: 1.5px underline;
+	font-size: .9rem;
+}
+
+.sl-2{
+	color: rgba(245, 245, 245, .8);
+}
+
+.sc-2 {
+
+	border-top: 3px solid #fff931;
+}
+
+.sc-2:nth-child(2), .sc-2:nth-child(3){
+		border-right: 3px solid #fff931;
 }
