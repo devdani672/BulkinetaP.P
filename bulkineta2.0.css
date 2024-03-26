@@ -19,25 +19,22 @@ body {
 
 #main-nav {
 	display: flex;
-	width: fit-content;
+	justify-content: end;
+	width: 100%;
 	background-color: #fff931;
 	height: 70px;
-	border-bottom-right-radius: 40px;
-	border-bottom-left-radius: 40px;
+	padding: 40px;
 	align-items: center;
-	position: fixed	;
+	position: sticky;
 	top: 0;
-	right: 0;
-	left: 0;
 	margin: auto;
-	border-bottom: 6px solid #222;
-	border-right: 6px solid #222;
-	border-left: 6px solid #222;
 	z-index: 100;
+	box-shadow: 3px 3px 5px #000;
+	opacity: .97;
 }
 
 #logo {
-	height: 120px;
+	height: 130px;
 }
 
 .nav__text-container {
@@ -45,11 +42,13 @@ body {
 }
 
 #logo__container {
-	padding: 0;
+	position: absolute;
+	left: 40px;
 }
 
 .nav__item {
 	transition: .3s;
+	justify-self: start;
 }
 
 
@@ -59,49 +58,11 @@ body {
 }
 
 
-	/* BANNER */
-
-
-#banner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	width: 	100%;
-	height: fit-content	;
-	background: #fff931;
-	padding: 135px 100px 65px 100px;
-	box-shadow: 3px 10px 10px #000;
-}
-
-#banner-img {
-	width: 	500px;
-}
-
-#banner-title {
-	color: #F5f5f5;
-	text-shadow: 2px 3px 0px #363535,
-				 3px 3px 5px #000;
-	margin: 0 0 30px 0;
-	text-align: left;
-}
-
-#kw0 {
-	font-size: 2rem;
-	color: #F5f5f5;
-	text-decoration: underline	4px;
-}
-
-#banner-text {
-	color: 	#363535;
-	margin: 0;
-}
-
-
 	/* CALCULADORA */
 
 
 h2, i, #kw{
-	font-size: 2rem;
+	font-size: 2.4rem;
 	color: #F5F5F5;
 	text-align: center;
 	width: 100%;
@@ -116,7 +77,7 @@ h2, #kw {
 #kw1 {
 	color: #fff931;
 	transition: .3s;
-	font-size: 2rem;
+	font-size: 2.4rem;
 }
 
 #kw1:hover {
@@ -436,6 +397,11 @@ input[type="radio"]:checked + label{
 
 	/*RECETAS*/
 
+
+#r {
+	position: relative;
+}
+
 #r-title {
 	box-shadow: 3px -4px 5px #000;
   	padding-top: 20px;
@@ -453,7 +419,7 @@ input[type="radio"]:checked + label{
 	background: #fff931;
 	border-radius: 25px;
 	box-shadow: 3px 3px 5px #000;
-	margin: 100px 50px 50px 50px;
+	margin: 250px 50px 50px 150px;
 }
 
 .s-title  {
@@ -479,7 +445,6 @@ input[type="radio"]:checked + label{
 .kw2 {
 	font-size: .9rem;
 	color: rgba(22, 22, 22, .8);
-	text-decoration: 1.5px underline;
 }
 
 .s-text {
@@ -502,18 +467,21 @@ input[type="radio"]:checked + label{
 	grid-template-rows: 40% 40%;
 	justify-content: center;
 
+
 }
 
 .s-container:nth-child(2), .s-container:nth-child(3){
 	border-right: 3px solid #222;
 }
 
+
 	/* ESTILO 2 */
 
 
 .rs-2 {
-	background: transparent;
+	background: #222;
 	border: 3px solid #fff931;
+	margin: 250px 150px 50px 50px;
 }
 
 .st-2{
@@ -522,7 +490,7 @@ input[type="radio"]:checked + label{
 
 .kw2-1 {
 	color: rgba(245, 245, 245, .9);
-	text-decoration: 1.5px underline;
+
 	font-size: .9rem;
 }
 
@@ -537,4 +505,31 @@ input[type="radio"]:checked + label{
 
 .sc-2:nth-child(2), .sc-2:nth-child(3){
 		border-right: 3px solid #fff931;
+}
+
+
+
+	/* IMAGENES */
+
+
+.img {
+	position: absolute;
+	z-index: -1;
+	opacity: .8;
+}
+
+.pastel {
+	top: 85px;
+	left: 20px;
+}
+
+.avena {
+	right: 20px;
+	top: 720px;
+}
+
+.tortitas {
+	top: 1360px;
+	left: 20px;
+	width: 500px;
 }
