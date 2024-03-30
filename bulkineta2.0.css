@@ -14,6 +14,36 @@ body {
 	box-sizing: border-box;
 
 
+/* ESTILOS GENERALES */
+
+
+.title {
+	font-size: 2.4rem;
+	color: #F5F5F5;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 3px 0px #898999;
+	font-style: italic;
+	margin-bottom: 0;
+	margin-top: 70px;
+}
+
+.recetas-title,.tierlist-title,.consejos-title {
+	margin-bottom: 0;
+	box-shadow: 3px -4px 5px #000;
+	padding-top: 20px;
+}
+
+i{
+	font-size: 2.4rem;
+	color: #F5F5F5;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 3px 0px #898999;
+	font-style: italic;
+}
+
+
 	/* NAV */
 
 
@@ -61,19 +91,6 @@ body {
 	/* CALCULADORA */
 
 
-h2, i, #kw{
-	font-size: 2.4rem;
-	color: #F5F5F5;
-	text-align: center;
-	width: 100%;
-	text-shadow: 2px 3px 0px #898999;
-	font-style: italic;
-}
-
-h2, #kw {
-	margin: 70px 0 70px 0;
-}
-
 #kw1 {
 	color: #fff931;
 	transition: .3s;
@@ -95,6 +112,7 @@ h2, #kw {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 50px;
+	margin-top: 70px;
 
 }
 
@@ -290,12 +308,6 @@ input[type="radio"]:checked + label{
  /* TIERLIST ALIMENTOS */ 
 
 
-#ta-title {
-	margin-bottom: 0;
-	box-shadow: 3px -4px 5px #000;
-	padding-top: 20px;
-}
-
 .subtitle {
 	text-align: center;
 	width: 100%;
@@ -305,7 +317,7 @@ input[type="radio"]:checked + label{
 }
 
 
-	/* ESTILO APARTADOS */
+	/* ESTILO  */
 
 
 .ta-apartado {
@@ -385,7 +397,7 @@ input[type="radio"]:checked + label{
 
 .tag-text {
 	font-size: 	0.9rem;
-		padding: 6px;
+	padding: 6px;
 	border-radius: 6px ;
 	display: flex;
 	align-items: center;
@@ -401,14 +413,8 @@ input[type="radio"]:checked + label{
 
 #r {
 	position: relative;
+	margin-bottom: 200px;
 }
-
-#r-title {
-	box-shadow: 3px -4px 5px #000;
-  	padding-top: 20px;
-  	margin: 150px 0 0 0;
-}
-
 
 	/* ESTILO 1 */
 
@@ -420,7 +426,7 @@ input[type="radio"]:checked + label{
 	background: #fff931;
 	border-radius: 25px;
 	box-shadow: 3px 3px 5px #000;
-	margin: 250px 50px 50px 150px;
+	margin: 200px 100px 0 200px;
 }
 
 .s-title  {
@@ -428,24 +434,20 @@ input[type="radio"]:checked + label{
 	font-size: 1.5rem;
 	grid-column: 1 / 4;
 	margin: 25px;
+	font-size: 1.25rem;
 }
 
 .s-subtitle{
 	color: #222;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	margin-bottom: 10px;
 	height: fit-content;
 }
 
 .s-li, .s-text {
-	font-size: .9rem;
+	font-size: .75rem;
 	margin: 0;
 	color: rgba(22, 22, 22, .7);
-}
-
-.kw2 {
-	font-size: .9rem;
-	color: rgba(22, 22, 22, .8);
 }
 
 .s-text {
@@ -482,17 +484,11 @@ input[type="radio"]:checked + label{
 .rs-2 {
 	background: #222;
 	border: 3px solid #fff931;
-	margin: 250px 150px 50px 50px;
+	margin: 250px 200px 0px 100px;
 }
 
 .st-2{
 	color: #fff931;;
-}
-
-.kw2-1 {
-	color: rgba(245, 245, 245, .9);
-
-	font-size: .9rem;
 }
 
 .sl-2{
@@ -517,6 +513,7 @@ input[type="radio"]:checked + label{
 	position: absolute;
 	z-index: -1;
 	opacity: .8;
+	width: 450px;
 }
 
 .pastel {
@@ -530,7 +527,62 @@ input[type="radio"]:checked + label{
 }
 
 .tortitas {
-	top: 1360px;
+	top: 1270px;
 	left: 20px;
 	width: 500px;
+}
+
+
+	/* CONSEJOS */
+
+
+.consejos {
+	margin: 100px;
+}
+
+
+.kw2 {
+	color: rgba(245, 245, 245, 1);
+	font-style: italic;
+}
+
+
+	/* FOOTER */
+
+
+footer {
+	margin: 400px 0 50px 0;
+}
+
+#footer-title {
+	font-size: .8rem;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	color: rgba(245, 245, 245, .7);
+}
+
+#creditos {
+	display: flex;
+	flex-direction: column;
+}
+
+.diseñadores {
+	width: fit-content;
+	color: rgba(245, 245, 245, .5);
+	margin: auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	font-size: .6rem;
+	font-weight: 0;
+	margin-top: 3px;
+}
+
+.end {
+	color: rgba(245, 245, 245, .7);
+	width: 100%;
+	text-align: center;
+	font-size: .8rem;
+
 }

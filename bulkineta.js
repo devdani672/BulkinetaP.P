@@ -10,7 +10,7 @@ function mostrarResultados() {
 	texto.textContent = "";
 
 if ((isNaN(peso) || isNaN(altura) || isNaN(edad) || isNaN(actividad)) || (!dato3 && !dato4)) {
-	console.log("Rellena todos los campos correctamente")
+	texto.textContent = `Rellena todos los campos correctamente`
 } else {
 	if (dato3) {
 		let resultado = 88.362 + (13.397 * peso) + (4.799  * altura) - (5.677 * edad);
